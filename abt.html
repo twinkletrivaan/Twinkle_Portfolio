@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="abt.css" />
+    <title>ABOUT</title>
+    <script
+      src="https://kit.fontawesome.com/66aa7c98b3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </head>
+  <body>
+    <div class="twinkle"></div>
+    <div class="main-container">
+      <div class="nav">
+        <div><a href="index.html">HOME</a></div>
+        <div><a href="abt.html">ABOUT</a></div>
+        <div><a href="contact.html">CONTACT</a></div>
+        <div><a href="">PROJECT</a></div>
+        <div><a href="resume.html">RESUME</a></div>
+      </div>
+      <div class="about">
+        <div class="about-me">
+          <p class="p1">ABOUT ME</p>
+          <p class="p2">
+            Hi I'm Twinkle.I am a vibrant engineering student with an insatiable
+            enthusiasm for learning. A keen observer and attentive listener, I
+            thrive on connecting with new individuals and have thrived in
+            various team settings. My passion for innovation led me to actively
+            participate in hackathons like Solving for India and the Smart India
+            Hackathon, where I secured victory in 2022. My journey reflects a
+            commitment to leveraging technology for a smarter and more empowered
+            India.
+          </p>
+        </div>
+        <div class="pic">
+          <lottie-player
+            src="https://lottie.host/16528fd7-a299-44d3-b0fb-7ea7c12a72ec/LSFqsZHOy5.json"
+            background="transparent"
+            speed="2"
+            style="width: 300px; height: 300px"
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
+      </div>
+      <div class="tech-level">
+        <p>Skills I Own</p>
+      </div>
+      <div class="skills">
+        <!-- first box of skills -->
+        <div>
+          <div class="skilltype">
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Git</li>
+            </ul>
+          </div>
+        </div>
+        <!-- second box of skills -->
+        <div>
+          <div class="skilltype">
+            <ul>
+              <li>Java</li>
+              <li>C</li>
+              <li>Python</li>
+              <li>C++</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <script>
+        const numStars = 300;
+        const starsContainer = document.querySelector(".twinkle");
+        for (let i = 0; i < numStars; i++) {
+          const star = document.createElement("div");
+          star.className = "star";
+          star.style.left = `${Math.random() * 100}%`;
+          star.style.top = `${Math.random() * 100}%`;
+          star.style.animationDelay = `${Math.random() * 3}s`;
+          starsContainer.appendChild(star);
+        }
+      </script>
+    </div>
+  </body>
+</html>

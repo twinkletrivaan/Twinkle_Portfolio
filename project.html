@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="project.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="project"></div>
+
+    <div class="nav">
+      <div><a href="index.html">HOME</a></div>
+      <div><a href="abt.html">ABOUT</a></div>
+      <div><a href="contact.html">CONTACT</a></div>
+      <div><a href="project.html">PROJECT</a></div>
+      <div><a href="resume.html">RESUME</a></div>
+    </div>
+    <div class="project-container">
+      <div>hii</div>
+      <div>hello</div>
+      <div>hlw</div>
+      <div>hl</div>
+      <div>twinkle</div>
+    </div>
+    <script>
+      const numStars = 400;
+      const starsContainer = document.querySelector("body");
+      for (let i = 0; i < numStars; i++) {
+        const star = document.createElement("div");
+        star.className = "star";
+        star.style.left = `${Math.random() * 100}%`;
+        star.style.top = `${Math.random() * 100}%`;
+        star.style.animationDelay = `${Math.random() * 6}s`;
+        starsContainer.appendChild(star);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="main-box">
+      <div class="nav">
+        <div><a href="index.html">HOME</a></div>
+        <div><a href="abt.html">ABOUT</a></div>
+        <div><a href="contact.html">CONTACT</a></div>
+        <div><a href="project.html">PROJECT</a></div>
+        <div><a href="resume.html">RESUME</a></div>
+      </div>
+      <div class="second">
+        <div>
+          HI.I'M TWINKLE.
+          <img
+            src="https://www.seanhalpin.xyz/hp/star-2.svg"
+            alt=""
+            class="image-container"
+          />
+        </div>
+        <div>
+          <img
+            src="https://www.seanhalpin.xyz/hp/star-2.svg"
+            alt=""
+            class="image-container"
+          />
+          A WEB DEVELOPER.
+        </div>
+      </div>
+      <div class="social-menu"><ul>
+            <li><a href="https://github.com/twinkletrivaan" target="blank"><i class="fab fa-github"></i></i></a></li>
+            <li><a href="https://www.instagram.com/trivaantwinkle/" target="blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/twinkle-trivaan-b24b161a6" target="blank"><i class="fab fa-linkedin-in"></i></a></li>
+            
+        </ul></div>
+    </div>
+    <script>
+      
+      const numStars = 400;
+      const starsContainer = document.querySelector("body");
+      for (let i = 0; i < numStars; i++) {
+        const star = document.createElement("div");
+        star.className = "star";
+        star.style.left = `${Math.random() * 100}%`;
+        star.style.top = `${Math.random() * 100}%`;
+        star.style.animationDelay = `${Math.random() * 6}s`;
+        starsContainer.appendChild(star);
+      }
+    </script>
+  </body>
+</html>

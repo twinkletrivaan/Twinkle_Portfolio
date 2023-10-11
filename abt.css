@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+.about {
+  display: flex;
+  justify-content: space-between;
+}
+.about div {
+  color: #d4ede4;
+}
+.about-me {
+  padding-top: 100px;
+  padding-left: 250px;
+}
+
+.p1 {
+  font-size: 45px;
+  font-family: "Brush Script MT", cursive;
+}
+
+.p2 {
+  font-size: 1.2rem;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  color: #dfdfdf;
+  line-height: 1.6;
+  margin-top: 60px;
+  padding-right: 200px;
+  letter-spacing: 2px;
+}
+.tech-level {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.tech-level p {
+  font-size: 60px;
+  font-family: "Brush Script MT", cursive;
+  color: #d4ede4;
+  text-align: center;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 70vh;
+}
+.skills div {
+  background-color: #d4ede4;
+  height: 250px;
+  width: 250px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #8fdcc2;
+  transition: transform 0.4s ease; /* Animation */
+  height: 220px;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.skills div :hover {
+  transform: scale(
+    1.1
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.skills div p {
+  text-align: center;
+}
+.skilltype ul {
+  align-items: center;
+}
+
+.skilltype ul li {
+  list-style: none;
+  margin-top: 10px;
+  font-size: 18px;
+  font-family: "Brush Script MT", cursive;
+}
+li:before {
+  margin-right: 10px;
+  content: "★";
+}
+.pic {
+  margin-right: 150px;
+}

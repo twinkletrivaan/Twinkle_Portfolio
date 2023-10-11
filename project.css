@@ -1,0 +1,11 @@
+.project-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: aquamarine;
+  margin: 20px;
+  width: 100%;
+}
+.project-container.div {
+  width: 500px;
+  height: 100px;
+}
